@@ -49,12 +49,12 @@ pytorch-deep-learning-foundations/
 
 | Module | Core Concepts & Systems Implemented | Key APIs / Mathematical Techniques |
 | :--- | :--- | :--- |
-| `00_pytorch_fundamentals` | Tensor initialization, memory layouts, dimensional manipulation, device-agnostic execution (CPU/CUDA), batch matrix multiplication. | `torch.matmul`, `torch.squeeze`, `torch.permute`, `torch.manual_seed` |
-| `01_pytorch_workflow` | End-to-end regression pipeline, `nn.Module` subclassing, forward computational graphs, parameter updates, serialization. | `nn.Linear`, `nn.L1Loss`, `torch.optim.SGD`, `state_dict` |
-| `02_neural_network_classification` | Non-linear geometric separation (Circles, Blobs), logit-to-probability mapping, numerical stability under extreme loss bounds. | `BCEWithLogitsLoss`, `CrossEntropyLoss`, `nn.ReLU`, `torchmetrics` |
-| `03_computer_vision` | Multi-class image classification (FashionMNIST), NCHW tensor conventions, 2D convolutional filter design, max pooling downsampling. | `nn.Conv2d`, `nn.MaxPool2d`, `torchvision.transforms`, `TinyVGG` |
-| `04_custom_datasets` | Custom disk ingestion pipelines (`Dataset`/`DataLoader`), stochastic data augmentations (`TrivialAugmentWide`), transfer learning adaptation. | `ImageFolder`, `__getitem__` override, `torchvision.models` |
-| `05_going_modular` | Refactoring notebook code into production-ready, reusable Python engines with parameterizable CLI entry points. | `argparse`, modular engine abstractions, automated asset caching |
+| [**`00_pytorch_fundamentals`**](./00_pytorch_fundamentals/) | Tensor initialization, memory layouts, dimensional manipulation, device-agnostic execution (CPU/CUDA), batch matrix multiplication. | `torch.matmul`, `torch.squeeze`, `torch.permute`, `torch.manual_seed` |
+| [**`01_pytorch_workflow`**](./01_pytorch_workflow/) | End-to-end regression pipeline, `nn.Module` subclassing, forward computational graphs, parameter updates, serialization. | `nn.Linear`, `nn.L1Loss`, `torch.optim.SGD`, `state_dict` |
+| [**`02_pytorch_neural_network_classification`**](./02_pytorch_neural_network_classification/) | Non-linear geometric separation (Circles, Blobs), logit-to-probability mapping, numerical stability under extreme loss bounds. | `BCEWithLogitsLoss`, `CrossEntropyLoss`, `nn.ReLU`, `torchmetrics` |
+| [**`03_pytorch_computer_vision`**](./03_pytorch_computer_vision/) | Multi-class image classification (FashionMNIST), NCHW tensor conventions, 2D convolutional filter design, max pooling downsampling. | `nn.Conv2d`, `nn.MaxPool2d`, `torchvision.transforms`, `TinyVGG` |
+| [**`04_pytorch_custom_datasets`**](./04_pytorch_custom_datasets/) | Custom disk ingestion pipelines (`Dataset`/`DataLoader`), stochastic data augmentations (`TrivialAugmentWide`), transfer learning adaptation. | `ImageFolder`, `__getitem__` override, `torchvision.models` |
+| [**`05_pytorch_going_modular`**](./05_pytorch_going_modular/) | Refactoring notebook code into production-ready, reusable Python engines with parameterizable CLI entry points. | `argparse`, modular engine abstractions, automated asset caching |
 
 ---
 ### ⚙️ Modular Engine Architecture (going_modular/)
