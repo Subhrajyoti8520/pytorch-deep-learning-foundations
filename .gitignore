@@ -77,6 +77,17 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# PyTorch / Deep Learning Models & Weights
+*.pt
+*.pth
+*.pwf
+*.bin
+*.onnx
+models/
+saved_models/
+checkpoints/
 
 # IPython
 profile_default/
@@ -216,3 +227,28 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Datasets & Large Archives
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+
+# IDEs & Code Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
