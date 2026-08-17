@@ -34,9 +34,7 @@ pytorch-deep-learning-foundations/
 │   └── going_modular/
 │       ├── data_setup.py
 │       ├── engine.py
-│       ├── get_data.py
 │       ├── model_builder.py
-│       ├── predict.py
 │       ├── train.py
 │       └── utils.py
 ├── .gitignore
@@ -61,13 +59,12 @@ pytorch-deep-learning-foundations/
 The repository transitions research prototypes into a clean, decoupled production package:
 
     going_modular/
-    ├── get_data.py        # Automated remote dataset retrieval and archive decompression
-    ├── data_setup.py      # Transforms, directory walking, and DataLoader generation
-    ├── model_builder.py   # Parameterized TinyVGG architecture definition
+    ├── data_setup.py      # Ingestion logic, directory parsing, transformations, and DataLoader pipeline generation
+    ├── model_builder.py   # Parameterized CNN architecture (TinyVGG) definition
     ├── engine.py          # Device-agnostic train_step, test_step, and multi-epoch loops
     ├── utils.py           # Model checkpoint persistence and path management
     ├── train.py           # CLI training orchestration with dynamic hyperparameters
-    └── predict.py         # Standalone CLI inference on arbitrary image inputs
+    └── 
 
 ### Modular CLI Usage
 **1. Dataset Ingestion**
