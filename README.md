@@ -60,16 +60,15 @@ The repository transitions research prototypes into a clean, decoupled productio
 
     going_modular/
     ├── data_setup.py      # Ingestion logic, directory parsing, transformations, and DataLoader pipeline generation
-    ├── model_builder.py   # Parameterized CNN architecture (TinyVGG) definition
     ├── engine.py          # Device-agnostic train_step, test_step, and multi-epoch loops
-    ├── utils.py           # Model checkpoint persistence and path management
-    ├── train.py           # CLI training orchestration with dynamic hyperparameters
-    └── 
+    ├── model_builder.py   # Parameterized CNN architecture (TinyVGG) definition
+    ├── train.py           # Making executable CLI orchestration script tying data loading, model instantiation, training loops with dynamic hyperparameters
+    └── utils.py           # Reusable utilities for saving model checkpoints and directory setup.
 
 ### Modular CLI Usage
 **1. Dataset Ingestion**
 ```bash
-python going_modular/get_data.py
+python going_modular/data_setup.py
 ```
 **2. Model Training with Hyperparameter Overrides**
 ```bash
